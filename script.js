@@ -26,14 +26,12 @@ const winner = (userWin, user, ai) => {
     if (userWin) {
         userScore++
         userScorePara.innerText = userScore
-        console.log('You Win');
         msg.innerText = `Your ${user} beats ${ai}`
         msg.style.backgroundColor = 'green'
     }
     else {
         aiScore++
         aiScorePara.innerText = aiScore
-        console.log('You Lose');
         msg.innerText = `${ai} beats Yours ${user}`
         msg.style.backgroundColor = 'red'
     }
